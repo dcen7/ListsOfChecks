@@ -16,6 +16,7 @@
 		FB4802F3287CA0CA0068D9AF /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4802F2287CA0CA0068D9AF /* ChecklistItem.swift */; };
 		FB73536E28FDFBED00F3407A /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB73536D28FDFBED00F3407A /* AllListsViewController.swift */; };
 		FB735370290024B300F3407A /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB73536F290024B300F3407A /* Checklist.swift */; };
+		FB73537229004FC800F3407A /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB73537129004FC800F3407A /* ListDetailViewController.swift */; };
 		FBD7D43728F593B500A046EC /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD7D43628F593B400A046EC /* ItemDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		FB4802F2287CA0CA0068D9AF /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
 		FB73536D28FDFBED00F3407A /* AllListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListsViewController.swift; sourceTree = "<group>"; };
 		FB73536F290024B300F3407A /* Checklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
+		FB73537129004FC800F3407A /* ListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
 		FBD7D43628F593B400A046EC /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +69,7 @@
 				FB4802DE287C60170068D9AF /* AppDelegate.swift */,
 				FB4802E0287C60170068D9AF /* SceneDelegate.swift */,
 				FB73536D28FDFBED00F3407A /* AllListsViewController.swift */,
+				FB73537129004FC800F3407A /* ListDetailViewController.swift */,
 				FB4802E2287C60170068D9AF /* ChecklistViewController.swift */,
 				FBD7D43628F593B400A046EC /* ItemDetailViewController.swift */,
 				FB4802E4287C60170068D9AF /* Main.storyboard */,
@@ -157,6 +160,7 @@
 				FB4802E1287C60170068D9AF /* SceneDelegate.swift in Sources */,
 				FB4802F3287CA0CA0068D9AF /* ChecklistItem.swift in Sources */,
 				FB735370290024B300F3407A /* Checklist.swift in Sources */,
+				FB73537229004FC800F3407A /* ListDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
