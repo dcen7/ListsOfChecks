@@ -10,9 +10,9 @@ import UIKit
 protocol ListDetailViewControllerDelegate: AnyObject {
     func listDetailViewControllerDidCancel(_ controller: ListDetailViewController)
     
-    func listDetailViewController(_ controller: ListDetailViewController, didFinishAdding checkist: Checklist)
+    func listDetailViewController(_ controller: ListDetailViewController, didFinishAdding checklist: Checklist)
     
-    func listDetailViewController(_ controller: ListDetailViewController, didFinishEditing checkist: Checklist)
+    func listDetailViewController(_ controller: ListDetailViewController, didFinishEditing checklist: Checklist)
 }
 
 
