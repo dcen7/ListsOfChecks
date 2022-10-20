@@ -8,7 +8,8 @@
 import UIKit
 
 class Checklist: NSObject {
-    var name: String
+    var name = ""
+    var items = [ChecklistItem]()
     
     init(name: String) {
         self.name = name
