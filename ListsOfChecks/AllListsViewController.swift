@@ -19,23 +19,10 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
         navigationController?.navigationBar.prefersLargeTitles = true
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         
-        var list = Checklist(name: "Birthdays")
-        lists.append(list)
+        loadChecklists()
         
-        list = Checklist(name: "Groceries")
-        lists.append(list)
-       
-        list = Checklist(name: "Cool Apps")
-        lists.append(list)
-        
-        list = Checklist(name: "To Do")
-        lists.append(list)
-        
-        for list in lists {
-            let item = ChecklistItem()
-            item.text = "Item for \(list.name)"
-            list.items.append(item)
-        }
+        print("*********path is \(dataFilePath())")
+
     }
 
     // MARK: - Table view data source
@@ -112,5 +99,40 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
         navigationController?.popViewController(animated: true)
     }
     
+    //MARK: - Saving data and loading data
+    func saveChecklist() {
+        let encoder = PropertyListEncoder()
+        
+        do {
+            let data = try encoder.encode(lists)
+            
+            try data.write(to: dataFilePath(),
+                           options: Data.WritingOptions.atomic)
+        } catch {
+            print("Error encoding item array: \(error.localizedDescription)")
+        }
+    }
+
+    func documentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
+    }
+
+    func dataFilePath() -> URL {
+        documentsDirectory().appendingPathComponent("Checklist.plist")
+    }
+
+    func loadChecklists() {
+        let path = dataFilePath()
+        
+        if let data = try? Data(contentsOf: path) {
+            let decoder = PropertyListDecoder()
+            do {
+                lists = try decoder.decode([Checklist].self, from: data)
+            } catch {
+                print("Error decoding item array: \(error.localizedDescription)")
+            }
+        }
+    }
     
 }
