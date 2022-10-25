@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB0AB29D2902EEF9005DAE46 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AB29C2902EEF9005DAE46 /* DataModel.swift */; };
 		FB4802DF287C60170068D9AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4802DE287C60170068D9AF /* AppDelegate.swift */; };
 		FB4802E1287C60170068D9AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4802E0287C60170068D9AF /* SceneDelegate.swift */; };
 		FB4802E3287C60170068D9AF /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4802E2287C60170068D9AF /* ChecklistViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB0AB29C2902EEF9005DAE46 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		FB4802DB287C60170068D9AF /* ListsOfChecks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListsOfChecks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB4802DE287C60170068D9AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB4802E0287C60170068D9AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				FB4802EC287C60190068D9AF /* Info.plist */,
 				FB73536F290024B300F3407A /* Checklist.swift */,
 				FB4802F2287CA0CA0068D9AF /* ChecklistItem.swift */,
+				FB0AB29C2902EEF9005DAE46 /* DataModel.swift */,
 			);
 			path = ListsOfChecks;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				FB4802F3287CA0CA0068D9AF /* ChecklistItem.swift in Sources */,
 				FB735370290024B300F3407A /* Checklist.swift in Sources */,
 				FB73537229004FC800F3407A /* ListDetailViewController.swift in Sources */,
+				FB0AB29D2902EEF9005DAE46 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
