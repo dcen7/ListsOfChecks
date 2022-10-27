@@ -49,6 +49,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB0AB29E2909A27C005DAE46 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB73536F290024B300F3407A /* Checklist.swift */,
+				FB4802F2287CA0CA0068D9AF /* ChecklistItem.swift */,
+				FB0AB29C2902EEF9005DAE46 /* DataModel.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		FB0AB29F2909A298005DAE46 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB73536D28FDFBED00F3407A /* AllListsViewController.swift */,
+				FB73537129004FC800F3407A /* ListDetailViewController.swift */,
+				FB4802E2287C60170068D9AF /* ChecklistViewController.swift */,
+				FBD7D43628F593B400A046EC /* ItemDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FB0AB2A02909A2C0005DAE46 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB4802E7287C60190068D9AF /* Assets.xcassets */,
+				FB4802E4287C60170068D9AF /* Main.storyboard */,
+				FB4802E9287C60190068D9AF /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		FB4802D2287C60160068D9AF = {
 			isa = PBXGroup;
 			children = (
@@ -68,19 +99,12 @@
 		FB4802DD287C60170068D9AF /* ListsOfChecks */ = {
 			isa = PBXGroup;
 			children = (
+				FB0AB2A02909A2C0005DAE46 /* Resources */,
+				FB0AB29F2909A298005DAE46 /* View Controllers */,
+				FB0AB29E2909A27C005DAE46 /* Data Models */,
 				FB4802DE287C60170068D9AF /* AppDelegate.swift */,
 				FB4802E0287C60170068D9AF /* SceneDelegate.swift */,
-				FB73536D28FDFBED00F3407A /* AllListsViewController.swift */,
-				FB73537129004FC800F3407A /* ListDetailViewController.swift */,
-				FB4802E2287C60170068D9AF /* ChecklistViewController.swift */,
-				FBD7D43628F593B400A046EC /* ItemDetailViewController.swift */,
-				FB4802E4287C60170068D9AF /* Main.storyboard */,
-				FB4802E7287C60190068D9AF /* Assets.xcassets */,
-				FB4802E9287C60190068D9AF /* LaunchScreen.storyboard */,
 				FB4802EC287C60190068D9AF /* Info.plist */,
-				FB73536F290024B300F3407A /* Checklist.swift */,
-				FB4802F2287CA0CA0068D9AF /* ChecklistItem.swift */,
-				FB0AB29C2902EEF9005DAE46 /* DataModel.swift */,
 			);
 			path = ListsOfChecks;
 			sourceTree = "<group>";
