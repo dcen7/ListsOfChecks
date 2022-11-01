@@ -26,6 +26,13 @@ class DataModel {
         handleFirstTime()
     }
     
+    class func nextChecklistItemID() -> Int {
+        let userDefaults = UserDefaults.standard
+        let itemID = userDefaults.integer(forKey: "ChecklistItemID")
+        userDefaults.set(itemID + 1, forKey: "ChecklistItemID")
+        return itemID
+    }
+    
     //MARK: - Saving data and loading data
     func saveChecklist() {
         let encoder = PropertyListEncoder()
